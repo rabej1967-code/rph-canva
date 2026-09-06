@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="ms" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPH Fleksi KSSM</title>
+  <style>/* Tailwind CSS 3.4.17 — precompiled & purged for this app (no CDN, no runtime compile) */
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.right-2{right:.5rem}.top-0{top:0}.top-16{top:4rem}.top-2{top:.5rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mt-1{margin-top:.25rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-3{height:.75rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-full{height:100%}.max-h-\[100px\]{max-height:100px}.w-3{width:.75rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-\[100px\]{max-width:100px}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-none{border-style:none}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254/var(--tw-border-opacity,1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208/var(--tw-border-opacity,1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199/var(--tw-bg-opacity,1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254/var(--tw-bg-opacity,1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255/var(--tw-bg-opacity,1))}.bg-blue-900{--tw-bg-opacity:1;background-color:rgb(30 58 138/var(--tw-bg-opacity,1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255/var(--tw-bg-opacity,1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/95{background-color:hsla(0,0%,100%,.95)}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-blue-900{--tw-gradient-from:#1e3a8a var(--tw-gradient-from-position);--tw-gradient-to:rgba(30,58,138,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-blue-800{--tw-gradient-to:rgba(30,64,175,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#1e40af var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-indigo-900{--tw-gradient-to:#312e81 var(--tw-gradient-to-position)}.object-contain{-o-object-fit:contain;object-fit:contain}.p-0{padding:0}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-10{padding-bottom:2.5rem}.pt-20{padding-top:5rem}.text-center{text-align:center}.font-sans{font-family:Plus Jakarta Sans,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.tracking-tight{letter-spacing:-.025em}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9/var(--tw-text-opacity,1))}.text-blue-200{--tw-text-opacity:1;color:rgb(191 219 254/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216/var(--tw-text-opacity,1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206/var(--tw-text-opacity,1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.hover\:bg-blue-800:hover{--tw-bg-opacity:1;background-color:rgb(30 64 175/var(--tw-bg-opacity,1))}.hover\:bg-red-200:hover{--tw-bg-opacity:1;background-color:rgb(254 202 202/var(--tw-bg-opacity,1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28/var(--tw-bg-opacity,1))}.hover\:bg-slate-300:hover{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity,1))}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+  .top-bar-print { flex-wrap: wrap; row-gap: 8px; }
+  @media print {
+    .top-bar-print { display: none !important; }
+    body { background: white !important; padding: 0 !important; }
+    .main-card { box-shadow: none !important; border: none !important; }
+    input, select, textarea {
+      border: none !important;
+      background: transparent !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+    .logo-upload-btn { display: none !important; }
+    .no-print { display: none !important; }
+    .print-only { display: block !important; }
+  }
+  textarea { resize: none; overflow: hidden; }
+  .activity-box { transition: all 0.2s ease; }
+  .activity-box:hover { border-color: #3b82f6; }
+  .btn-save { background: #059669; }
+  .btn-save:hover { background: #047857; }
+  .btn-pdf { background: #dc2626; }
+  .btn-pdf:hover { background: #b91c1c; }
+  .btn-word { background: #2563eb; }
+  .btn-word:hover { background: #1d4ed8; }
+  #appToast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; padding: 10px 18px; border-radius: 10px; font-size: 13px; font-weight: 600; color: #fff; box-shadow: 0 10px 15px -3px rgba(0,0,0,.2); opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+</style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-slate-100 font-sans">
+<div id="ck-auth-overlay" style="position:fixed;inset:0;background:#0f172a;z-index:99999;display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',sans-serif">
+  <div style="width:100%;max-width:340px;background:#1e293b;border-radius:16px;padding:28px 26px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+    <div style="font-size:17px;font-weight:800;color:#fff;margin-bottom:2px">RPH SMK Canva</div>
+    <div id="ck-auth-title" style="font-size:13px;color:#94a3b8;margin-bottom:18px">Log masuk untuk teruskan</div>
+    <div id="ck-auth-err" style="font-size:11.5px;color:#fca5a5;margin-bottom:8px;min-height:14px"></div>
+    <div id="ck-login-block">
+      <label style="font-size:11px;color:#94a3b8;font-weight:700">NAMA PENGGUNA</label>
+      <input id="ck-user" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin:4px 0 12px" placeholder="nama.pengguna">
+      <label style="font-size:11px;color:#94a3b8;font-weight:700">KATA LALUAN</label>
+      <input id="ck-pass" type="password" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin:4px 0 16px" onkeydown="if(event.key==='Enter')ckDoLogin()">
+      <button onclick="ckDoLogin()" style="width:100%;padding:11px;border:none;border-radius:8px;background:#2563eb;color:#fff;font-weight:700;font-size:13px;cursor:pointer">Log Masuk &rarr;</button>
+      <div style="font-size:10.5px;color:#64748b;text-align:center;margin-top:10px">Tiada akaun? Hubungi admin sekolah anda.</div>
+    </div>
+    <div id="ck-fpw-block" style="display:none">
+      <label style="font-size:11px;color:#94a3b8;font-weight:700">KATA LALUAN BARU</label>
+      <input id="ck-fpw-new" type="password" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin:4px 0 12px" placeholder="min. 6 aksara">
+      <label style="font-size:11px;color:#94a3b8;font-weight:700">SAHKAN KATA LALUAN</label>
+      <input id="ck-fpw-conf" type="password" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin:4px 0 16px">
+      <button onclick="ckForcePwSubmit()" style="width:100%;padding:11px;border:none;border-radius:8px;background:#2563eb;color:#fff;font-weight:700;font-size:13px;cursor:pointer">Simpan &amp; Teruskan &rarr;</button>
+    </div>
+  </div>
+</div>
+<div id="ck-topbar" style="display:none;position:fixed;top:0;left:0;right:0;height:40px;background:#0f172a;color:#fff;font-size:11.5px;display:none;align-items:center;padding:0 14px;z-index:9998;font-family:'Segoe UI',sans-serif;gap:10px">
+  <span id="ck-userlabel" style="font-weight:700;flex:1"></span>
+  <button id="ck-admin-btn" onclick="ckOpenAdmin()" style="display:none;background:none;border:1px solid #475569;color:#cbd5e1;border-radius:6px;padding:4px 10px;font-size:10.5px;cursor:pointer">&#9881; Admin</button>
+  <button onclick="ckDoLogout()" style="background:none;border:1px solid #475569;color:#cbd5e1;border-radius:6px;padding:4px 10px;font-size:10.5px;cursor:pointer">Keluar</button>
+</div>
+<div id="ck-admin-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99998;align-items:center;justify-content:center;font-family:'Segoe UI',sans-serif">
+  <div style="width:100%;max-width:380px;max-height:80vh;overflow:auto;background:#1e293b;border-radius:16px;padding:22px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <div style="font-size:15px;font-weight:800;color:#fff">Urus Pengguna</div>
+      <button onclick="ckCloseAdmin()" style="background:none;border:none;color:#94a3b8;font-size:18px;cursor:pointer">&times;</button>
+    </div>
+    <label style="font-size:11px;color:#94a3b8;font-weight:700">NAMA PENGGUNA BARU</label>
+    <input id="ck-nu-name" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin:4px 0 8px" placeholder="cth: guru_ali">
+    <div style="font-size:10px;color:#64748b;margin-bottom:8px">Kata laluan dijana automatik (random) — akan dipaparkan selepas tambah.</div>
+    <select id="ck-nu-role" style="width:100%;box-sizing:border-box;padding:9px 11px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:13px;margin-bottom:10px">
+      <option value="user">Pengguna</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button onclick="ckAddUser()" style="width:100%;padding:10px;border:none;border-radius:8px;background:#2563eb;color:#fff;font-weight:700;font-size:12.5px;cursor:pointer;margin-bottom:10px">+ Tambah Pengguna</button>
+    <div id="ck-adm-msg" style="font-size:11px;margin-bottom:10px"></div>
+    <div id="ck-user-list" style="display:flex;flex-direction:column;gap:6px"></div>
+  </div>
+</div>
+
+  <div id="app-wrapper" class="h-full w-full overflow-auto"><!-- Top Bar -->
+   <div class="top-bar-print fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md z-50 px-4 py-3 flex items-center gap-3">
+    <div class="flex-1 flex items-center gap-2">
+     <div class="w-8 h-8 rounded-lg bg-blue-900 flex items-center justify-center"><i data-lucide="book-open" class="w-4 h-4 text-white"></i>
+     </div><span id="topBarTitle" class="font-bold text-blue-900 text-sm truncate">RPH Fleksi KSSM</span>
+    </div><button onclick="simpanData()" class="btn-save flex items-center gap-2 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-colors" title="Simpan ke storan tempatan peranti ini"> <i data-lucide="save" class="w-4 h-4"></i> Simpan </button> <button onclick="muatTurunPDF()" class="btn-pdf flex items-center gap-2 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-colors" title="Muat turun sebagai fail PDF"> <i data-lucide="download" class="w-4 h-4"></i> PDF </button> <button onclick="muatTurunWord()" class="btn-word flex items-center gap-2 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-colors" title="Muat turun sebagai fail Word"> <i data-lucide="file-text" class="w-4 h-4"></i> Word </button> <button onclick="window.print()" class="flex items-center gap-2 bg-blue-900 hover:bg-blue-800 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"> <i data-lucide="printer" class="w-4 h-4"></i> Cetak </button> <button onclick="resetForm()" class="flex items-center gap-2 bg-slate-500 hover:bg-slate-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"> <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Reset </button>
+   </div><!-- Main Content -->
+   <div class="max-w-4xl mx-auto pt-20 pb-10 px-4">
+    <div class="main-card bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden"><!-- Header -->
+     <div class="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 px-8 py-6">
+      <h1 id="mainTitle" class="text-2xl font-extrabold text-white tracking-tight">RPH Fleksi KSSM</h1>
+      <p class="text-blue-200 text-sm mt-1">Rancangan Pengajaran Harian – Kurikulum Standard Sekolah Menengah</p>
+     </div>
+     <div class="p-6 space-y-6"><!-- MAKLUMAT ASAS -->
+      <section>
+       <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-md bg-blue-100 flex items-center justify-center">
+         <i data-lucide="info" class="w-4 h-4 text-blue-900"></i>
+        </div>
+        <h2 class="font-bold text-blue-900 text-lg">Maklumat Asas</h2>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-4"><!-- Logo -->
+        <div class="flex flex-col items-center gap-2 p-4 bg-slate-50 rounded-xl border border-dashed border-slate-300"><img id="logoPreview" class="max-w-[100px] max-h-[100px] object-contain hidden rounded-lg"> <label class="logo-upload-btn cursor-pointer flex flex-col items-center gap-1 text-slate-400 hover:text-blue-600 transition-colors"> <i data-lucide="image-plus" class="w-8 h-8"></i> <span class="text-xs font-medium">Logo Sekolah</span> <input type="file" accept="image/*" onchange="loadLogo(event)" class="hidden"> </label>
+        </div><!-- School & Teacher -->
+        <div class="md:col-span-2 space-y-3">
+         <div><label class="block text-xs font-semibold text-slate-500 mb-1">Nama Sekolah</label> <input type="text" id="namaSekolah" placeholder="Masukkan nama sekolah" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+         </div>
+         <div><label class="block text-xs font-semibold text-slate-500 mb-1">Nama Guru</label> <input type="text" id="namaGuru" placeholder="Masukkan nama guru" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+         </div>
+         <div class="grid grid-cols-3 gap-3">
+          <div><label class="block text-xs font-semibold text-slate-500 mb-1">Kelas</label> <input type="text" id="kelas" placeholder="cth: Tingkatan 1 Amanah" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div><label class="block text-xs font-semibold text-slate-500 mb-1">Minggu</label> <input type="text" id="minggu" placeholder="cth: 12" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+          <div><label class="block text-xs font-semibold text-slate-500 mb-1">Tarikh</label> <input type="date" id="tarikh" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <hr class="border-slate-200"><!-- KURIKULUM -->
+      <section>
+       <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-md bg-emerald-100 flex items-center justify-center">
+         <i data-lucide="graduation-cap" class="w-4 h-4 text-emerald-700"></i>
+        </div>
+        <h2 class="font-bold text-blue-900 text-lg">Kurikulum</h2>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Tingkatan</label> <select id="tingkatan" onchange="generateTopik()" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"> <option>Tingkatan 1</option><option>Tingkatan 2</option><option>Tingkatan 3</option><option>Tingkatan 4</option><option>Tingkatan 5</option><option>Tingkatan 6 Rendah</option><option>Tingkatan 6 Atas</option> </select>
+        </div>
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Subjek</label> <select id="subjek" onchange="onSubjekChange()" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"> <option>Bahasa Melayu</option><option>Bahasa Inggeris</option><option>Matematik</option><option>Sejarah</option><option>Sains</option> <option>Fizik</option><option>Kimia</option><option>Biologi</option><option>Pendidikan Islam</option><option>Pendidikan Moral</option> <option>Geografi</option><option>Ekonomi</option><option>Perniagaan</option><option>Prinsip Perakaunan</option><option>ASK</option><option value="__lain__">Lain-lain (Boleh Edit)</option> </select>
+        <input type="text" id="subjekLain" oninput="generateTopik()" placeholder="Taip nama subjek..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm mt-2 hidden focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+       </div>
+       <div class="mt-4"><label class="block text-xs font-semibold text-slate-500 mb-1">Bab / Topik</label> <input type="text" id="topik" list="topikList" oninput="markTopikManual();autoGenerate()" placeholder="Pilih dari cadangan atau taip topik sendiri..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+       <datalist id="topikList"></datalist>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Standard Kandungan</label> <textarea id="sk" rows="2" placeholder="Standard Kandungan..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Standard Pembelajaran</label> <textarea id="sp" rows="2" placeholder="Standard Pembelajaran..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+       </div>
+       <div class="mt-4"><label class="block text-xs font-semibold text-slate-500 mb-1">Objektif Pembelajaran</label> <textarea id="obj" rows="2" placeholder="Pada akhir PdP, murid dapat..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+       </div>
+      </section>
+      <hr class="border-slate-200"><!-- AKTIVITI PdP -->
+      <section>
+       <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+         <div class="w-7 h-7 rounded-md bg-amber-100 flex items-center justify-center">
+          <i data-lucide="list-checks" class="w-4 h-4 text-amber-700"></i>
+         </div>
+         <h2 class="font-bold text-blue-900 text-lg">Aktiviti PdP</h2>
+        </div><button onclick="addActivity()" class="no-print flex items-center gap-1 bg-blue-900 hover:bg-blue-800 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors"> <i data-lucide="plus" class="w-3 h-3"></i> Tambah </button>
+       </div>
+       <div id="activityContainer" class="space-y-3"></div>
+      </section>
+      <hr class="border-slate-200"><!-- PENTAKSIRAN & REFLEKSI -->
+      <section>
+       <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-md bg-purple-100 flex items-center justify-center">
+         <i data-lucide="clipboard-check" class="w-4 h-4 text-purple-700"></i>
+        </div>
+        <h2 class="font-bold text-blue-900 text-lg">Pentaksiran &amp; Refleksi</h2>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Bahan Bantu Mengajar (BBM)</label> <textarea id="bbm" rows="2" placeholder="cth: Buku teks, slaid pembentangan, lembaran kerja" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Elemen Merentas Kurikulum (EMK)</label> <textarea id="emk" rows="2" placeholder="cth: TMK, Kreativiti, Keusahawanan" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Pentaksiran</label> <textarea id="pentaksiran" rows="2" placeholder="cth: Kuiz, soal jawab, latihan bertulis" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+        <div><label class="block text-xs font-semibold text-slate-500 mb-1">Nilai Murni</label> <textarea id="nilai" rows="2" placeholder="cth: Kerjasama, hormat-menghormati" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+        </div>
+       </div>
+       <div class="mt-4"><label class="block text-xs font-semibold text-slate-500 mb-1">Refleksi</label>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+         <div class="flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-lg px-3 py-2"><span class="text-emerald-600 font-bold text-sm">✓</span> <input type="number" id="refleksiCapai" placeholder="0" min="0" class="w-full bg-transparent border-none text-sm focus:outline-none font-semibold text-emerald-700 p-0"> <span class="text-xs text-emerald-600 whitespace-nowrap">tercapai</span>
+         </div>
+         <div class="flex items-center gap-2 bg-red-50 border border-red-200 rounded-lg px-3 py-2"><span class="text-red-500 font-bold text-sm">✗</span> <input type="number" id="refleksiTidak" placeholder="0" min="0" class="w-full bg-transparent border-none text-sm focus:outline-none font-semibold text-red-600 p-0"> <span class="text-xs text-red-500 whitespace-nowrap">belum</span>
+         </div>
+         <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 md:col-span-2"><span class="text-blue-600 font-bold text-sm">Σ</span> <input type="number" id="refleksiJumlah" placeholder="0" min="0" class="w-full bg-transparent border-none text-sm focus:outline-none font-semibold text-blue-700 p-0"> <span class="text-xs text-blue-600 whitespace-nowrap">jumlah murid</span>
+         </div>
+        </div><textarea id="refleksi" rows="3" placeholder="Catatan refleksi guru..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+       </div>
+      </section>
+      <hr class="border-slate-200"><!-- CATATAN -->
+      <section>
+       <div class="flex items-center gap-2 mb-4">
+        <div class="w-7 h-7 rounded-md bg-rose-100 flex items-center justify-center">
+         <i data-lucide="message-square" class="w-4 h-4 text-rose-600"></i>
+        </div>
+        <h2 class="font-bold text-blue-900 text-lg">Catatan Tambahan</h2>
+       </div><textarea id="catatan" rows="3" placeholder="Sebarang catatan tambahan..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)"></textarea>
+      </section>
+     </div><!-- Footer -->
+     <div class="bg-slate-50 px-8 py-4 border-t border-slate-200 text-center text-xs text-slate-400">
+      RPH Fleksi KSSM © 2025 — Dijana secara automatik
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+// ══════════════════════════════════════════════════════════
+// CIKGUKITA AUTH MODULE (Supabase Auth + RLS) — auto-suntik
+// ══════════════════════════════════════════════════════════
+var SB_URL = 'https://aowzftmdriukxbltjtpm.supabase.co';
+var SB_ANON_KEY = 'PASTE_ANON_KEY_DI_SINI'; // <-- ganti dengan anon key projek Supabase
+var SB_FN_ADMIN = SB_URL + '/functions/v1/rph-canva-admin';
+var CK_TABLE = 'rph_canva_data';
+
+var ckUrlParams = new URLSearchParams(window.location.search);
+var KOD_SEKOLAH = (ckUrlParams.get('t') || '').trim().toUpperCase();
+
+function ckMakeEmail(username, kodSekolah){
+  var u = (username||'').trim().toLowerCase().replace(/[^a-z0-9_.]/g,'');
+  var k = (kodSekolah||'').trim().toLowerCase().replace(/[^a-z0-9]/g,'');
+  return u + '.' + k + '@cikgukita.internal';
+}
+
+var CK_SESS = null; // {access_token, refresh_token, user_id}
+var CK_CU = null;   // {username, role, kod_sekolah, must_change_password}
+var CK_SKEY = 'ck_sess_v1_' + (KOD_SEKOLAH||'nokod') + '_' + CK_TABLE;
+function ckLoadSess(){ try{ return JSON.parse(localStorage.getItem(CK_SKEY)); }catch(e){ return null; } }
+function ckSaveSess(){ localStorage.setItem(CK_SKEY, JSON.stringify(CK_SESS)); }
+function ckClearSess(){ localStorage.removeItem(CK_SKEY); }
+
+async function ckFetch(path, opts){
+  opts = opts || {};
+  var headers = Object.assign({'apikey': SB_ANON_KEY,'Content-Type':'application/json'}, opts.headers||{});
+  headers['Authorization'] = 'Bearer ' + ((CK_SESS&&CK_SESS.access_token) ? CK_SESS.access_token : SB_ANON_KEY);
+  return fetch(SB_URL + path, Object.assign({}, opts, {headers:headers}));
+}
+
+async function ckFetchProfile(){
+  try{
+    var res = await ckFetch('/rest/v1/'+CK_TABLE+'?select=username,role,kod_sekolah,must_change_password&user_id=eq.'+CK_SESS.user_id, {method:'GET'});
+    if(!res.ok) return false;
+    var rows = await res.json();
+    if(!rows.length) return false;
+    CK_CU = rows[0];
+    return true;
+  }catch(e){ return false; }
+}
+async function ckRefreshToken(){
+  if(!CK_SESS||!CK_SESS.refresh_token) return false;
+  var res = await ckFetch('/auth/v1/token?grant_type=refresh_token', {method:'POST', body: JSON.stringify({refresh_token:CK_SESS.refresh_token})});
+  if(!res.ok) return false;
+  var d = await res.json();
+  CK_SESS = {access_token:d.access_token, refresh_token:d.refresh_token, user_id:d.user.id};
+  ckSaveSess();
+  return true;
+}
+
+async function ckBoot(){
+  if(!KOD_SEKOLAH){
+    document.getElementById('ck-auth-err').textContent = 'URL tiada kod sekolah (?t=KODSEKOLAH). Hubungi admin.';
+    return;
+  }
+  CK_SESS = ckLoadSess();
+  if(CK_SESS && CK_SESS.access_token){
+    if(await ckFetchProfile()){ await ckLoginOK(); return; }
+    if(await ckRefreshToken() && await ckFetchProfile()){ await ckLoginOK(); return; }
+  }
+  ckClearSess(); CK_SESS=null; CK_CU=null;
+}
+
+async function ckDoLogin(){
+  var u = document.getElementById('ck-user').value.trim();
+  var p = document.getElementById('ck-pass').value;
+  var err = document.getElementById('ck-auth-err');
+  err.textContent='';
+  if(!KOD_SEKOLAH){ err.textContent='URL tiada kod sekolah (?t=KODSEKOLAH).'; return; }
+  if(!u||!p){ err.textContent='Sila isi semua maklumat.'; return; }
+  var email = ckMakeEmail(u, KOD_SEKOLAH);
+  try{
+    var res = await ckFetch('/auth/v1/token?grant_type=password', {method:'POST', body: JSON.stringify({email:email,password:p})});
+    if(!res.ok){ err.textContent='Nama pengguna atau kata laluan tidak sah.'; return; }
+    var d = await res.json();
+    CK_SESS = {access_token:d.access_token, refresh_token:d.refresh_token, user_id:d.user.id};
+    ckSaveSess();
+    if(!await ckFetchProfile()){ err.textContent='Akaun wujud tapi profil tidak dijumpai. Hubungi admin.'; return; }
+    document.getElementById('ck-pass').value='';
+    await ckLoginOK();
+  }catch(e){ err.textContent='Ralat sambungan. Cuba lagi.'; }
+}
+
+async function ckLoginOK(){
+  if(CK_CU.must_change_password){
+    document.getElementById('ck-login-block').style.display='none';
+    document.getElementById('ck-fpw-block').style.display='block';
+    document.getElementById('ck-auth-title').textContent='Set kata laluan baru (kali pertama)';
+    return;
+  }
+  document.getElementById('ck-auth-overlay').style.display='none';
+  document.getElementById('ck-topbar').style.display='flex';
+  document.getElementById('ck-userlabel').textContent='\u{1F464} ' + CK_CU.username + ' \u00b7 ' + KOD_SEKOLAH;
+  if(CK_CU.role==='admin') document.getElementById('ck-admin-btn').style.display='inline-block';
+  document.body.style.paddingTop = '40px';
+  await ckOnLoginHook(); // ditakrif khas untuk setiap app (cloud pull + init UI)
+}
+
+function ckDoLogout(){
+  CK_CU=null; CK_SESS=null; ckClearSess();
+  document.getElementById('ck-topbar').style.display='none';
+  document.getElementById('ck-auth-overlay').style.display='flex';
+  document.getElementById('ck-login-block').style.display='block';
+  document.getElementById('ck-fpw-block').style.display='none';
+  document.getElementById('ck-user').value=''; document.getElementById('ck-pass').value='';
+  document.getElementById('ck-auth-err').textContent='';
+  document.body.style.paddingTop = '';
+  ckCloseAdmin();
+}
+
+async function ckForcePwSubmit(){
+  var nw=document.getElementById('ck-fpw-new').value;
+  var cf=document.getElementById('ck-fpw-conf').value;
+  var err=document.getElementById('ck-auth-err');
+  if(nw.length<6){ err.textContent='Min. 6 aksara.'; return; }
+  if(nw!==cf){ err.textContent='Tidak sepadan.'; return; }
+  var res = await ckFetch('/auth/v1/user', {method:'PUT', body: JSON.stringify({password:nw})});
+  if(!res.ok){ err.textContent='Gagal tukar kata laluan. Cuba lagi.'; return; }
+  await ckFetch('/rest/v1/'+CK_TABLE+'?user_id=eq.'+CK_SESS.user_id, {method:'PATCH', headers:{'Prefer':'return=minimal'}, body: JSON.stringify({must_change_password:false})});
+  location.reload();
+}
+
+// ── Admin panel ──
+function ckOpenAdmin(){ if(!CK_CU||CK_CU.role!=='admin')return; ckRenderUserList(); document.getElementById('ck-admin-modal').style.display='flex'; }
+function ckCloseAdmin(){ document.getElementById('ck-admin-modal').style.display='none'; }
+async function ckAdmFn(action, payload){
+  var res = await fetch(SB_FN_ADMIN, {
+    method:'POST',
+    headers:{'Content-Type':'application/json','Authorization':'Bearer '+CK_SESS.access_token,'apikey':SB_ANON_KEY},
+    body: JSON.stringify(Object.assign({action:action}, payload||{}))
+  });
+  var d = await res.json();
+  if(!res.ok) throw new Error(d.error||'Ralat pelayan');
+  return d;
+}
+async function ckRenderUserList(){
+  var el=document.getElementById('ck-user-list'); el.innerHTML='Memuatkan...';
+  try{
+    var d = await ckAdmFn('list_users');
+    el.innerHTML='';
+    d.users.forEach(function(u){
+      var row=document.createElement('div');
+      row.style.cssText='display:flex;align-items:center;gap:8px;font-size:11.5px;padding:7px 9px;background:#0f172a;border-radius:8px;color:#e2e8f0';
+      row.innerHTML='<span style="font-weight:700;flex:1">'+u.username+'</span>'
+        +'<span style="font-size:9px;padding:1px 6px;border-radius:8px;background:'+(u.role==='admin'?'rgba(37,99,235,.25);color:#93c5fd':'rgba(148,163,184,.2);color:#cbd5e1')+'">'+(u.role==='admin'?'Admin':'Pengguna')+'</span>'
+        +(u.must_change_password?'<span style="font-size:9px;color:#fbbf24">Belum tukar</span>':'')
+        +(u.username===CK_CU.username?'<span style="font-size:9px;color:#64748b">Anda</span>'
+          :'<button onclick="ckDelUser(\''+u.username+'\')" style="border:1px solid #7f1d1d;background:none;color:#fca5a5;border-radius:6px;font-size:10px;padding:3px 8px;cursor:pointer">Buang</button>');
+      el.appendChild(row);
+    });
+  }catch(e){ el.innerHTML='<span style="color:#fca5a5;font-size:11px">Ralat: '+e.message+'</span>'; }
+}
+async function ckAddUser(){
+  var n=document.getElementById('ck-nu-name').value.trim();
+  var r=document.getElementById('ck-nu-role').value;
+  var m=document.getElementById('ck-adm-msg');
+  if(!n){ m.innerHTML='<span style="color:#fca5a5">Nama diperlukan.</span>'; return; }
+  m.textContent='Mencipta akaun...';
+  try{
+    var d = await ckAdmFn('create_user', {username:n, role:r});
+    document.getElementById('ck-nu-name').value='';
+    m.innerHTML='<span style="color:#86efac">&#10003; "'+d.username+'" dicipta.<br>Pasword: <b style="user-select:all">'+d.password+'</b><br>(Wajib ditukar bila log masuk kali pertama)</span>';
+    ckRenderUserList();
+  }catch(e){ m.innerHTML='<span style="color:#fca5a5">'+e.message+'</span>'; }
+}
+async function ckDelUser(username){
+  if(!confirm('Padam pengguna "'+username+'"?')) return;
+  try{ await ckAdmFn('delete_user', {username:username}); ckRenderUserList(); }
+  catch(e){ alert('Gagal padam: '+e.message); }
+}
+
+// ── Cloud sync generik (1 blob JSON per pengguna, kunci 'data') ──
+async function ckCloudPush(obj){
+  if(!CK_CU||!CK_SESS) return false;
+  try{
+    var res = await ckFetch('/rest/v1/'+CK_TABLE+'?user_id=eq.'+CK_SESS.user_id, {
+      method:'PATCH', headers:{'Prefer':'return=minimal'},
+      body: JSON.stringify({data: obj})
+    });
+    return res.ok;
+  }catch(e){ return false; }
+}
+async function ckCloudPull(){
+  if(!CK_CU||!CK_SESS) return null;
+  try{
+    var res = await ckFetch('/rest/v1/'+CK_TABLE+'?select=data&user_id=eq.'+CK_SESS.user_id, {method:'GET'});
+    if(!res.ok) return null;
+    var rows = await res.json();
+    if(!rows.length || !rows[0].data || !Object.keys(rows[0].data).length) return null;
+    return rows[0].data;
+  }catch(e){ return null; }
+}
+
+document.addEventListener('DOMContentLoaded', function(){ ckBoot(); });
+
+
+// ─── Element SDK ───
+const defaultConfig = {
+  main_title: 'RPH Fleksi KSSM',
+  background_color: '#f1f5f9',
+  surface_color: '#ffffff',
+  text_color: '#1e3a8a',
+  primary_action_color: '#1e3a8a',
+  secondary_action_color: '#64748b',
+  font_family: 'Plus Jakarta Sans',
+  font_size: 14
+};
+
+function applyConfig(config) {
+  const c = { ...defaultConfig, ...config };
+  const font = c.font_family || defaultConfig.font_family;
+  const baseSize = c.font_size || defaultConfig.font_size;
+  const stack = `${font}, sans-serif`;
+
+  document.getElementById('mainTitle').textContent = c.main_title;
+  document.getElementById('topBarTitle').textContent = c.main_title;
+
+  document.body.style.background = c.background_color;
+  document.body.style.fontFamily = stack;
+  document.body.style.fontSize = baseSize + 'px';
+
+  document.querySelector('.main-card').style.background = c.surface_color;
+
+  document.querySelectorAll('h1, h2, .font-bold').forEach(el => {
+    el.style.color = c.text_color;
+  });
+  document.getElementById('mainTitle').style.color = '#ffffff';
+
+  document.querySelectorAll('.btn-primary-sdk, .bg-blue-900').forEach(el => {
+    el.style.backgroundColor = c.primary_action_color;
+  });
+
+  const headerGrad = document.querySelector('.bg-gradient-to-r');
+  if (headerGrad) {
+    headerGrad.style.background = `linear-gradient(to right, ${c.primary_action_color}, ${adjustColor(c.primary_action_color, 20)})`;
+  }
+
+  document.querySelectorAll('.bg-slate-500').forEach(el => {
+    el.style.backgroundColor = c.secondary_action_color;
+  });
+}
+
+function adjustColor(hex, amount) {
+  let r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  r = Math.min(255, r + amount); g = Math.min(255, g + amount); b = Math.min(255, b + amount);
+  return '#' + [r,g,b].map(x => x.toString(16).padStart(2,'0')).join('');
+}
+
+window.elementSdk?.init({
+  defaultConfig,
+  onConfigChange: async (config) => applyConfig(config),
+  mapToCapabilities: (config) => ({
+    recolorables: [
+      { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+      { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+      { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+      { get: () => config.primary_action_color || defaultConfig.primary_action_color, set: (v) => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); } },
+      { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+    ],
+    borderables: [],
+    fontEditable: {
+      get: () => config.font_family || defaultConfig.font_family,
+      set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+    },
+    fontSizeable: {
+      get: () => config.font_size || defaultConfig.font_size,
+      set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+    }
+  }),
+  mapToEditPanelValues: (config) => new Map([
+    ['main_title', config.main_title || defaultConfig.main_title]
+  ])
+});
+
+// ─── Logo Upload ───
+function loadLogo(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    const img = document.getElementById('logoPreview');
+    img.src = ev.target.result;
+    img.classList.remove('hidden');
+  };
+  reader.readAsDataURL(file);
+}
+
+// ─── Auto-grow textareas ───
+function autoGrow(el) {
+  el.style.height = 'auto';
+  el.style.height = el.scrollHeight + 'px';
+}
+
+// ─── Activities ───
+let activityCount = 0;
+
+function addActivity(phase, minit, huraian) {
+  activityCount++;
+  const id = activityCount;
+  const container = document.getElementById('activityContainer');
+
+  const phases = ['Set Induksi', 'Perkembangan', 'Aktiviti', 'Penutup'];
+  const phaseVal = phase || phases[Math.min(id - 1, phases.length - 1)] || 'Aktiviti';
+
+  const box = document.createElement('div');
+  box.className = 'activity-box bg-slate-50 border border-slate-200 rounded-xl p-4 relative';
+  box.id = 'activity-' + id;
+  box.innerHTML = `
+    <button onclick="this.parentElement.remove()" class="no-print absolute top-2 right-2 w-6 h-6 flex items-center justify-center rounded-full bg-red-100 hover:bg-red-200 text-red-500 transition-colors" title="Padam">
+      <i data-lucide="x" class="w-3 h-3"></i>
+    </button>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+      <div>
+        <label class="block text-xs font-semibold text-slate-500 mb-1">Fasa</label>
+        <select class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+          ${phases.map(p => `<option ${p === phaseVal ? 'selected' : ''}>${p}</option>`).join('')}
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-500 mb-1">Masa (minit)</label>
+        <input type="text" value="${minit || ''}" placeholder="cth: 10" class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="md:col-span-2">
+        <label class="block text-xs font-semibold text-slate-500 mb-1">Huraian Aktiviti</label>
+        <textarea rows="2" placeholder="Terangkan aktiviti..." class="w-full px-2 py-1.5 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" oninput="autoGrow(this)">${huraian || ''}</textarea>
+      </div>
+    </div>
+  `;
+  container.appendChild(box);
+  lucide.createIcons();
+}
+
+// ─── Curriculum Data ───
+const kurikulumData = {
+  'Bahasa Melayu': {
+    'Tingkatan 1': ['Bab 1: Keluarga Bahagia', 'Bab 2: Sayangi Alam Sekitar', 'Bab 3: Budaya Kita'],
+    'Tingkatan 2': ['Bab 1: Integriti Diri', 'Bab 2: Warisan Bangsa', 'Bab 3: Seni dan Budaya'],
+    'Tingkatan 3': ['Bab 1: Jati Diri', 'Bab 2: Kelestarian Alam', 'Bab 3: Semangat Perpaduan'],
+    'Tingkatan 4': ['Bab 1: Bahasa dan Komunikasi', 'Bab 2: Kesusasteraan Melayu', 'Bab 3: Penulisan Kreatif'],
+    'Tingkatan 5': ['Bab 1: Wacana Ilmiah', 'Bab 2: Karya Agung', 'Bab 3: Retorik dan Pemujukan']
+  },
+  'Bahasa Inggeris': {
+    'Tingkatan 1': ['Unit 1: Hello!', 'Unit 2: My Family', 'Unit 3: My School'],
+    'Tingkatan 2': ['Unit 1: People Around Us', 'Unit 2: Health and Environment', 'Unit 3: Science and Technology'],
+    'Tingkatan 3': ['Unit 1: Sports and Recreation', 'Unit 2: People and Culture', 'Unit 3: Science and Technology'],
+    'Tingkatan 4': ['Unit 1: Communication', 'Unit 2: Environment', 'Unit 3: Career and Future'],
+    'Tingkatan 5': ['Unit 1: Research Skills', 'Unit 2: Media Literacy', 'Unit 3: Global Citizenship']
+  },
+  'Matematik': {
+    'Tingkatan 1': ['Bab 1: Nombor Nisbah', 'Bab 2: Faktor dan Gandaan', 'Bab 3: Kuasa Dua dan Punca Kuasa Dua'],
+    'Tingkatan 2': ['Bab 1: Pola dan Jujukan', 'Bab 2: Pemfaktoran dan Pecahan Algebra', 'Bab 3: Ungkapan Algebra'],
+    'Tingkatan 3': ['Bab 1: Indeks', 'Bab 2: Bentuk Piawai', 'Bab 3: Matematik Pengguna'],
+    'Tingkatan 4': ['Bab 1: Fungsi dan Persamaan Kuadratik', 'Bab 2: Sistem Persamaan', 'Bab 3: Indeks dan Logaritma'],
+    'Tingkatan 5': ['Bab 1: Sukatan Membulat', 'Bab 2: Pengaturcaraan Linear', 'Bab 3: Taburan Kebarangkalian']
+  },
+  'Sejarah': {
+    'Tingkatan 1': ['Bab 1: Sejarah dan Kita', 'Bab 2: Kerajaan Alam Melayu', 'Bab 3: Kesultanan Melayu Melaka'],
+    'Tingkatan 2': ['Bab 1: Warisan Negara Bangsa', 'Bab 2: Nasionalisme di Asia Tenggara', 'Bab 3: Perjuangan Kemerdekaan'],
+    'Tingkatan 3': ['Bab 1: Perlembagaan Malaysia', 'Bab 2: Sistem Pentadbiran Negara', 'Bab 3: Pembangunan Negara'],
+    'Tingkatan 4': ['Bab 1: Tamadun Awal Manusia', 'Bab 2: Peningkatan Tamadun', 'Bab 3: Kemunculan Tamadun Islam'],
+    'Tingkatan 5': ['Bab 1: Pembaharuan dan Pengaruh Islam', 'Bab 2: Imperialisme Barat', 'Bab 3: Malaysia dan Kerjasama Antarabangsa']
+  },
+  'Sains': {
+    'Tingkatan 1': ['Bab 1: Pengenalan kepada Sains', 'Bab 2: Sel sebagai Unit Asas Kehidupan', 'Bab 3: Jirim'],
+    'Tingkatan 2': ['Bab 1: Biodiversiti', 'Bab 2: Nutrisi', 'Bab 3: Daya dan Gerakan'],
+    'Tingkatan 3': ['Bab 1: Respirasi', 'Bab 2: Perkumuhan', 'Bab 3: Pembiakan'],
+    'Tingkatan 4': ['Bab 1: Tenaga dan Kelestarian Kimia', 'Bab 2: Jirim dan Bahan', 'Bab 3: Biologi Manusia'],
+    'Tingkatan 5': ['Bab 1: Sumber Tenaga', 'Bab 2: Elektronik dan Teknologi Maklumat', 'Bab 3: Bahan dan Kehidupan Hijau']
+  },
+  'Fizik': {
+    'Tingkatan 4': ['Bab 1: Pengukuran', 'Bab 2: Daya dan Gerakan I', 'Bab 3: Graviti'],
+    'Tingkatan 5': ['Bab 1: Daya dan Gerakan II', 'Bab 2: Tekanan', 'Bab 3: Elektrik']
+  },
+  'Kimia': {
+    'Tingkatan 4': ['Bab 1: Pengenalan kepada Kimia', 'Bab 2: Struktur Atom', 'Bab 3: Jadual Berkala Unsur'],
+    'Tingkatan 5': ['Bab 1: Kadar Tindak Balas', 'Bab 2: Sebatian Karbon', 'Bab 3: Bahan Polimer']
+  },
+  'Biologi': {
+    'Tingkatan 4': ['Bab 1: Pengenalan kepada Biologi', 'Bab 2: Biologi Sel', 'Bab 3: Pergerakan Bahan Merentasi Membran Plasma'],
+    'Tingkatan 5': ['Bab 1: Homeostasis', 'Bab 2: Sistem Saraf', 'Bab 3: Genetik dan Variasi']
+  },
+  'Pendidikan Islam': {
+    'Tingkatan 1': ['Bab 1: Aqidah', 'Bab 2: Ibadah', 'Bab 3: Sirah dan Tamadun Islam'],
+    'Tingkatan 2': ['Bab 1: Tilawah Al-Quran', 'Bab 2: Hadis', 'Bab 3: Akhlak Islamiah'],
+    'Tingkatan 3': ['Bab 1: Aqidah', 'Bab 2: Ibadah', 'Bab 3: Adab dan Akhlak'],
+    'Tingkatan 4': ['Bab 1: Tilawah Al-Quran', 'Bab 2: Aqidah', 'Bab 3: Fiqh'],
+    'Tingkatan 5': ['Bab 1: Tilawah Al-Quran', 'Bab 2: Munakahat', 'Bab 3: Tamadun Islam dan Sumbangan']
+  },
+  'Pendidikan Moral': {
+    'Tingkatan 1': ['Bab 1: Tanggungjawab Diri', 'Bab 2: Kasih Sayang', 'Bab 3: Hormat-menghormati'],
+    'Tingkatan 2': ['Bab 1: Keadilan', 'Bab 2: Rasional', 'Bab 3: Kebebasan'],
+    'Tingkatan 3': ['Bab 1: Keberanian', 'Bab 2: Hemah Tinggi', 'Bab 3: Semangat Bermasyarakat'],
+    'Tingkatan 4': ['Bab 1: Kepercayaan kepada Tuhan', 'Bab 2: Keadilan', 'Bab 3: Toleransi'],
+    'Tingkatan 5': ['Bab 1: Kebebasan', 'Bab 2: Keberanian', 'Bab 3: Kesederhanaan']
+  },
+  'Geografi': {
+    'Tingkatan 1': ['Bab 1: Kedudukan', 'Bab 2: Kemahiran Geografi', 'Bab 3: Litosfera'],
+    'Tingkatan 2': ['Bab 1: Cuaca dan Iklim', 'Bab 2: Tumbuh-tumbuhan Semula Jadi', 'Bab 3: Penduduk'],
+    'Tingkatan 3': ['Bab 1: Sumber', 'Bab 2: Kegiatan Ekonomi', 'Bab 3: Pembangunan dan Kelestarian'],
+    'Tingkatan 4': ['Bab 1: Geografi Fizikal', 'Bab 2: Cuaca dan Iklim', 'Bab 3: Pengangkutan'],
+    'Tingkatan 5': ['Bab 1: Globalisasi', 'Bab 2: Urbanisasi', 'Bab 3: Pembangunan Lestari']
+  },
+  'Ekonomi': {
+    'Tingkatan 4': ['Bab 1: Pengenalan kepada Ekonomi', 'Bab 2: Permintaan dan Penawaran', 'Bab 3: Keseimbangan Pasaran'],
+    'Tingkatan 5': ['Bab 1: Pendapatan Negara', 'Bab 2: Wang dan Institusi Kewangan', 'Bab 3: Perdagangan Antarabangsa']
+  },
+  'Perniagaan': {
+    'Tingkatan 4': ['Bab 1: Pengenalan kepada Perniagaan', 'Bab 2: Pemilikan Perniagaan', 'Bab 3: Persekitaran Perniagaan'],
+    'Tingkatan 5': ['Bab 1: Pengeluaran', 'Bab 2: Pemasaran', 'Bab 3: Kewangan Perniagaan']
+  },
+  'Prinsip Perakaunan': {
+    'Tingkatan 4': ['Bab 1: Pengenalan kepada Perakaunan', 'Bab 2: Klasifikasi Akaun', 'Bab 3: Dokumen Perniagaan'],
+    'Tingkatan 5': ['Bab 1: Perakaunan untuk Perkongsian', 'Bab 2: Syarikat Berhad', 'Bab 3: Penyata Kewangan']
+  },
+  'ASK': {
+    'Tingkatan 1': ['Bab 1: Asas Sains Komputer', 'Bab 2: Penyelesaian Masalah', 'Bab 3: Pangkalan Data'],
+    'Tingkatan 2': ['Bab 1: Algoritma', 'Bab 2: Pengaturcaraan', 'Bab 3: Lembaran Elektronik'],
+    'Tingkatan 3': ['Bab 1: Rangkaian Komputer', 'Bab 2: Pengaturcaraan Scratch', 'Bab 3: Kecerdasan Buatan'],
+    'Tingkatan 4': ['Bab 1: Pemikiran Komputasional', 'Bab 2: Pembangunan Aplikasi', 'Bab 3: Pangkalan Data'],
+    'Tingkatan 5': ['Bab 1: Pengaturcaraan Berstruktur', 'Bab 2: Pembangunan Laman Web', 'Bab 3: Projek Inovasi Digital']
+  }
+};
+
+const skspData = {
+  'Bahasa Melayu': { sk: 'Membaca dan memahami pelbagai jenis teks.', sp: 'Murid dapat membaca, memahami dan menyatakan maklumat tersurat dan tersirat.', obj: 'Pada akhir PdP, murid dapat membaca dan memahami teks dengan betul serta menjawab soalan pemahaman.' },
+  'Bahasa Inggeris': { sk: 'Reading and comprehension of various text types.', sp: 'Students can read, understand and respond to a variety of texts.', obj: 'By the end of the lesson, students will be able to read and comprehend the text, and answer comprehension questions correctly.' },
+  'Matematik': { sk: 'Memahami dan mengaplikasikan konsep nombor dan operasi.', sp: 'Murid dapat menyelesaikan masalah melibatkan operasi asas dengan betul.', obj: 'Pada akhir PdP, murid dapat menyelesaikan masalah matematik menggunakan operasi yang betul.' },
+  'Sejarah': { sk: 'Memahami latar belakang sejarah dan peristiwa penting.', sp: 'Murid dapat menjelaskan peristiwa sejarah dan kesannya.', obj: 'Pada akhir PdP, murid dapat menjelaskan peristiwa sejarah dengan tepat.' },
+  'Sains': { sk: 'Memahami konsep sains dan proses saintifik.', sp: 'Murid dapat menjalankan eksperimen dan menganalisis data.', obj: 'Pada akhir PdP, murid dapat menjalankan eksperimen dan membuat kesimpulan.' },
+  'Fizik': { sk: 'Memahami konsep fizik dan hukum-hukum asas.', sp: 'Murid dapat mengaplikasikan hukum fizik dalam penyelesaian masalah.', obj: 'Pada akhir PdP, murid dapat mengaplikasikan konsep fizik dengan betul.' },
+  'Kimia': { sk: 'Memahami struktur atom dan tindak balas kimia.', sp: 'Murid dapat menjelaskan tindak balas kimia dan persamaan kimia.', obj: 'Pada akhir PdP, murid dapat menulis dan mengimbangkan persamaan kimia.' },
+  'Biologi': { sk: 'Memahami struktur dan fungsi organisma hidup.', sp: 'Murid dapat menjelaskan proses biologi dalam organisma.', obj: 'Pada akhir PdP, murid dapat menjelaskan proses biologi dengan tepat.' },
+  'Pendidikan Islam': { sk: 'Memahami dan menghayati ajaran Islam.', sp: 'Murid dapat membaca al-Quran dan memahami hukum-hukum fiqh.', obj: 'Pada akhir PdP, murid dapat membaca al-Quran dengan tajwid yang betul.' },
+  'Pendidikan Moral': { sk: 'Memahami dan mengamalkan nilai-nilai murni.', sp: 'Murid dapat mengenal pasti dan mengamalkan nilai murni dalam kehidupan.', obj: 'Pada akhir PdP, murid dapat menjelaskan dan mengamalkan nilai murni.' },
+  'Geografi': { sk: 'Memahami konsep geografi fizikal dan manusia.', sp: 'Murid dapat menganalisis isu geografi dan mencadangkan penyelesaian.', obj: 'Pada akhir PdP, murid dapat menganalisis isu geografi dengan tepat.' },
+  'Ekonomi': { sk: 'Memahami konsep asas ekonomi.', sp: 'Murid dapat menganalisis mekanisme pasaran dan dasar ekonomi.', obj: 'Pada akhir PdP, murid dapat menjelaskan konsep ekonomi asas.' },
+  'Perniagaan': { sk: 'Memahami konsep dan operasi perniagaan.', sp: 'Murid dapat mengenal pasti jenis perniagaan dan fungsinya.', obj: 'Pada akhir PdP, murid dapat menjelaskan jenis-jenis pemilikan perniagaan.' },
+  'Prinsip Perakaunan': { sk: 'Memahami prinsip dan amalan perakaunan.', sp: 'Murid dapat merekod urus niaga dan menyediakan penyata kewangan.', obj: 'Pada akhir PdP, murid dapat merekod urus niaga dengan betul.' },
+  'ASK': { sk: 'Memahami konsep asas sains komputer dan teknologi maklumat.', sp: 'Murid dapat mengaplikasikan pemikiran komputasional dan pengaturcaraan.', obj: 'Pada akhir PdP, murid dapat menulis atur cara mudah untuk menyelesaikan masalah.' }
+};
+
+function getSubjekValue() {
+  const sel = document.getElementById('subjek');
+  if (sel.value === '__lain__') {
+    return document.getElementById('subjekLain').value.trim() || 'Lain-lain';
+  }
+  return sel.value;
+}
+
+function onSubjekChange() {
+  const sel = document.getElementById('subjek');
+  const custom = document.getElementById('subjekLain');
+  if (sel.value === '__lain__') {
+    custom.classList.remove('hidden');
+    custom.focus();
+  } else {
+    custom.classList.add('hidden');
+  }
+  generateTopik();
+}
+
+function markTopikManual() {
+  document.getElementById('topik').dataset.auto = '0';
+}
+
+function generateTopik() {
+  const subjek = getSubjekValue();
+  const tingkatan = document.getElementById('tingkatan').value;
+  const topikInput = document.getElementById('topik');
+  const topikList = document.getElementById('topikList');
+
+  topikList.innerHTML = '';
+  const topics = kurikulumData[subjek]?.[tingkatan] || [];
+  topics.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    topikList.appendChild(opt);
+  });
+  // Only auto-fill the box if it's empty or still holds a previous auto-suggestion —
+  // never overwrite something the guru typed in manually.
+  if (topics.length > 0 && (topikInput.value === '' || topikInput.dataset.auto === '1')) {
+    topikInput.value = topics[0];
+    topikInput.dataset.auto = '1';
+  } else if (topics.length === 0 && topikInput.dataset.auto === '1') {
+    topikInput.value = '';
+  }
+  autoGenerate();
+}
+
+function autoGenerate() {
+  const subjek = getSubjekValue();
+  const data = skspData[subjek] || {};
+  document.getElementById('sk').value = data.sk || '';
+  document.getElementById('sp').value = data.sp || '';
+  document.getElementById('obj').value = data.obj || '';
+
+  // Auto-grow populated textareas
+  ['sk','sp','obj'].forEach(id => autoGrow(document.getElementById(id)));
+}
+
+function resetForm() {
+  // Inline confirmation
+  const topBar = document.querySelector('.top-bar-print');
+  if (document.getElementById('resetConfirm')) return;
+
+  const confirmBar = document.createElement('div');
+  confirmBar.id = 'resetConfirm';
+  confirmBar.className = 'fixed top-16 left-0 w-full bg-red-50 border-b border-red-200 px-4 py-3 flex items-center justify-center gap-3 z-50';
+  confirmBar.innerHTML = `
+    <span class="text-sm text-red-700 font-medium">Pasti mahu reset semua?</span>
+    <button onclick="confirmReset()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-1.5 rounded-lg text-xs font-semibold transition-colors">Ya, Reset</button>
+    <button onclick="document.getElementById('resetConfirm').remove()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-1.5 rounded-lg text-xs font-semibold transition-colors">Batal</button>
+  `;
+  document.body.appendChild(confirmBar);
+}
+
+function confirmReset() {
+  document.querySelectorAll('input[type="text"], input[type="number"], input[type="date"], textarea').forEach(el => el.value = '');
+  document.querySelectorAll('select').forEach(el => el.selectedIndex = 0);
+  document.getElementById('subjekLain').classList.add('hidden');
+  document.getElementById('activityContainer').innerHTML = '';
+  document.getElementById('logoPreview').classList.add('hidden');
+  document.getElementById('logoPreview').src = '';
+  activityCount = 0;
+  generateTopik();
+  const rc = document.getElementById('resetConfirm');
+  if (rc) rc.remove();
+}
+
+// ─── Toast Notification ───
+function showToast(msg, isError) {
+  let toast = document.getElementById('appToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'appToast';
+    document.body.appendChild(toast);
+  }
+  toast.style.background = isError ? '#dc2626' : '#16a34a';
+  toast.textContent = msg;
+  toast.style.opacity = '1';
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => { toast.style.opacity = '0'; }, 2800);
+}
+
+// ─── Collect all form data into one object ───
+function collectFormData() {
+  const activities = [];
+  document.querySelectorAll('#activityContainer .activity-box').forEach(box => {
+    const select = box.querySelector('select');
+    const textInput = box.querySelector('input[type="text"]');
+    const textarea = box.querySelector('textarea');
+    activities.push({
+      fasa: select ? select.value : '',
+      masa: textInput ? textInput.value : '',
+      huraian: textarea ? textarea.value : ''
+    });
+  });
+
+  const val = (id) => { const el = document.getElementById(id); return el ? el.value : ''; };
+
+  return {
+    logo: document.getElementById('logoPreview').src && !document.getElementById('logoPreview').classList.contains('hidden') ? document.getElementById('logoPreview').src : '',
+    namaSekolah: val('namaSekolah'),
+    namaGuru: val('namaGuru'),
+    kelas: val('kelas'),
+    minggu: val('minggu'),
+    tarikh: val('tarikh'),
+    tingkatan: val('tingkatan'),
+    subjek: val('subjek'),
+    subjekLain: val('subjekLain'),
+    topik: val('topik'),
+    sk: val('sk'),
+    sp: val('sp'),
+    obj: val('obj'),
+    activities,
+    bbm: val('bbm'),
+    emk: val('emk'),
+    pentaksiran: val('pentaksiran'),
+    nilai: val('nilai'),
+    refleksiCapai: val('refleksiCapai'),
+    refleksiTidak: val('refleksiTidak'),
+    refleksiJumlah: val('refleksiJumlah'),
+    refleksi: val('refleksi'),
+    catatan: val('catatan')
+  };
+}
+
+// ─── Save to LocalStorage ───
+const RPH_STORAGE_KEY = 'rph_kssm_draft_v1';
+
+function simpanData() {
+  try {
+    const data = collectFormData();
+    localStorage.setItem(RPH_STORAGE_KEY, JSON.stringify(data));
+    ckCloudPush(data);
+    showToast('✓ RPH disimpan');
+  } catch (e) {
+    showToast('Gagal simpan. Storan penuh atau tidak disokong pelayar ini.', true);
+  }
+}
+
+// ─── Only rebuild the Topik datalist, without touching sk/sp/obj/topik values ───
+function refreshTopikList() {
+  const subjek = getSubjekValue();
+  const tingkatan = document.getElementById('tingkatan').value;
+  const topikList = document.getElementById('topikList');
+  topikList.innerHTML = '';
+  const topics = kurikulumData[subjek]?.[tingkatan] || [];
+  topics.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t;
+    topikList.appendChild(opt);
+  });
+}
+
+// ─── Load saved draft from LocalStorage. Returns true if a draft was found & applied ───
+function muatDataTersimpan() {
+  let raw;
+  try { raw = localStorage.getItem(RPH_STORAGE_KEY); } catch (e) { return false; }
+  if (!raw) return false;
+
+  let data;
+  try { data = JSON.parse(raw); } catch (e) { return false; }
+
+  const setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v || ''; };
+
+  if (data.logo) {
+    const img = document.getElementById('logoPreview');
+    img.src = data.logo;
+    img.classList.remove('hidden');
+  }
+
+  setVal('namaSekolah', data.namaSekolah);
+  setVal('namaGuru', data.namaGuru);
+  setVal('kelas', data.kelas);
+  setVal('minggu', data.minggu);
+  setVal('tarikh', data.tarikh);
+  if (data.tingkatan) document.getElementById('tingkatan').value = data.tingkatan;
+  if (data.subjek) document.getElementById('subjek').value = data.subjek;
+  setVal('subjekLain', data.subjekLain);
+  if (document.getElementById('subjek').value === '__lain__') {
+    document.getElementById('subjekLain').classList.remove('hidden');
+  }
+
+  refreshTopikList();
+
+  setVal('topik', data.topik);
+  document.getElementById('topik').dataset.auto = '0';
+  setVal('sk', data.sk);
+  setVal('sp', data.sp);
+  setVal('obj', data.obj);
+  setVal('bbm', data.bbm);
+  setVal('emk', data.emk);
+  setVal('pentaksiran', data.pentaksiran);
+  setVal('nilai', data.nilai);
+  setVal('refleksiCapai', data.refleksiCapai);
+  setVal('refleksiTidak', data.refleksiTidak);
+  setVal('refleksiJumlah', data.refleksiJumlah);
+  setVal('refleksi', data.refleksi);
+  setVal('catatan', data.catatan);
+
+  document.getElementById('activityContainer').innerHTML = '';
+  activityCount = 0;
+  if (Array.isArray(data.activities) && data.activities.length) {
+    data.activities.forEach(a => addActivity(a.fasa, a.masa, a.huraian));
+  } else {
+    addActivity('Set Induksi', '5', '');
+    addActivity('Perkembangan', '20', '');
+    addActivity('Aktiviti', '20', '');
+    addActivity('Penutup', '5', '');
+  }
+
+  ['sk','sp','obj','bbm','emk','pentaksiran','nilai','refleksi','catatan'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) autoGrow(el);
+  });
+
+  return true;
+}
+
+// ─── Shared HTML template used by both PDF and Word export ───
+function escapeHtml(str) {
+  return (str || '').toString()
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function nl2br(str) {
+  return escapeHtml(str).replace(/\n/g, '<br>');
+}
+
+function buildFilename(ext) {
+  const kelas = (document.getElementById('kelas').value || 'RPH').trim().replace(/[^a-z0-9]+/gi, '_');
+  const tarikh = document.getElementById('tarikh').value || '';
+  return `RPH_${kelas}${tarikh ? '_' + tarikh : ''}.${ext}`;
+}
+
+function buildExportHTML() {
+  const d = collectFormData();
+  const subjekDisplay = d.subjek === '__lain__' ? (d.subjekLain || 'Lain-lain') : d.subjek;
+  const tarikhDisplay = d.tarikh
+    ? new Date(d.tarikh + 'T00:00:00').toLocaleDateString('ms-MY', { day: '2-digit', month: 'long', year: 'numeric' })
+    : '';
+
+  const activitiesRows = d.activities.map(a => `
+    <tr>
+      <td style="border:1px solid #94a3b8;padding:6px 8px;">${escapeHtml(a.fasa)}</td>
+      <td style="border:1px solid #94a3b8;padding:6px 8px;text-align:center;">${escapeHtml(a.masa)}</td>
+      <td style="border:1px solid #94a3b8;padding:6px 8px;">${nl2br(a.huraian)}</td>
+    </tr>`).join('');
+
+  return `
+  <div style="font-family:'Calibri','Arial',sans-serif;color:#0f172a;max-width:750px;">
+    ${d.logo ? `<div style="text-align:center;margin-bottom:10px;"><img src="${d.logo}" style="max-height:80px;"></div>` : ''}
+    <h1 style="text-align:center;color:#1e3a8a;font-size:20px;margin:0 0 4px;">RANCANGAN PENGAJARAN HARIAN</h1>
+    <p style="text-align:center;color:#475569;font-size:12px;margin:0 0 16px;">${escapeHtml(d.namaSekolah)}</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin-bottom:14px;">
+      <tr><td style="padding:4px 8px;font-weight:bold;width:130px;">Nama Guru</td><td style="padding:4px 8px;">: ${escapeHtml(d.namaGuru)}</td>
+          <td style="padding:4px 8px;font-weight:bold;width:80px;">Kelas</td><td style="padding:4px 8px;">: ${escapeHtml(d.kelas)}</td></tr>
+      <tr><td style="padding:4px 8px;font-weight:bold;">Minggu</td><td style="padding:4px 8px;">: ${escapeHtml(d.minggu)}</td>
+          <td style="padding:4px 8px;font-weight:bold;">Tarikh</td><td style="padding:4px 8px;">: ${tarikhDisplay}</td></tr>
+      <tr><td style="padding:4px 8px;font-weight:bold;">Mata Pelajaran</td><td style="padding:4px 8px;" colspan="3">: ${escapeHtml(subjekDisplay)}</td></tr>
+      <tr><td style="padding:4px 8px;font-weight:bold;">Tingkatan</td><td style="padding:4px 8px;" colspan="3">: ${escapeHtml(d.tingkatan)}</td></tr>
+      <tr><td style="padding:4px 8px;font-weight:bold;vertical-align:top;">Topik</td><td style="padding:4px 8px;" colspan="3">: ${escapeHtml(d.topik)}</td></tr>
+    </table>
+    <h3 style="color:#1e3a8a;font-size:14px;border-bottom:2px solid #1e3a8a;padding-bottom:2px;">Kurikulum</h3>
+    <p style="font-size:13px;margin:6px 0;"><b>Standard Kandungan:</b> ${escapeHtml(d.sk)}</p>
+    <p style="font-size:13px;margin:6px 0;"><b>Standard Pembelajaran:</b> ${escapeHtml(d.sp)}</p>
+    <p style="font-size:13px;margin:6px 0 14px;"><b>Objektif Pembelajaran:</b> ${escapeHtml(d.obj)}</p>
+    <h3 style="color:#1e3a8a;font-size:14px;border-bottom:2px solid #1e3a8a;padding-bottom:2px;">Aktiviti PdP</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:13px;margin:8px 0 14px;">
+      <tr style="background:#eff6ff;"><th style="border:1px solid #94a3b8;padding:6px 8px;">Fasa</th><th style="border:1px solid #94a3b8;padding:6px 8px;">Masa (min)</th><th style="border:1px solid #94a3b8;padding:6px 8px;">Huraian Aktiviti</th></tr>
+      ${activitiesRows}
+    </table>
+    <h3 style="color:#1e3a8a;font-size:14px;border-bottom:2px solid #1e3a8a;padding-bottom:2px;">Pentaksiran &amp; Refleksi</h3>
+    <p style="font-size:13px;margin:6px 0;"><b>BBM:</b> ${escapeHtml(d.bbm)}</p>
+    <p style="font-size:13px;margin:6px 0;"><b>EMK:</b> ${escapeHtml(d.emk)}</p>
+    <p style="font-size:13px;margin:6px 0;"><b>Pentaksiran:</b> ${escapeHtml(d.pentaksiran)}</p>
+    <p style="font-size:13px;margin:6px 0 14px;"><b>Nilai Murni:</b> ${escapeHtml(d.nilai)}</p>
+    <p style="font-size:13px;margin:6px 0;"><b>Refleksi:</b> ${d.refleksiCapai || 0} murid tercapai / ${d.refleksiTidak || 0} murid belum menguasai daripada ${d.refleksiJumlah || 0} murid.</p>
+    <p style="font-size:13px;margin:6px 0 14px;">${nl2br(d.refleksi)}</p>
+    ${d.catatan ? `<h3 style="color:#1e3a8a;font-size:14px;border-bottom:2px solid #1e3a8a;padding-bottom:2px;">Catatan Tambahan</h3><p style="font-size:13px;margin:6px 0;">${nl2br(d.catatan)}</p>` : ''}
+  </div>`;
+}
+
+// ─── Wait for all <img> inside a container to finish loading before capturing ───
+function waitForImages(container) {
+  const imgs = Array.from(container.querySelectorAll('img'));
+  if (!imgs.length) return Promise.resolve();
+  return Promise.all(imgs.map(img => {
+    if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+    return new Promise(resolve => {
+      img.onload = () => resolve();
+      img.onerror = () => resolve();
+    });
+  }));
+}
+
+// ─── Download as PDF (html2canvas capture + manual jsPDF paging — more reliable than jsPDF's built-in .html() helper) ───
+async function muatTurunPDF() {
+  if (!window.jspdf || !window.html2canvas) {
+    showToast('Pustaka PDF gagal dimuatkan. Semak sambungan internet.', true);
+    return;
+  }
+  showToast('Menjana PDF...');
+
+  const holder = document.createElement('div');
+  holder.style.position = 'fixed';
+  holder.style.top = '0';
+  holder.style.left = '0';
+  holder.style.zIndex = '-1';
+  holder.style.width = '750px';
+  holder.style.background = '#ffffff';
+  holder.style.padding = '24px';
+  holder.innerHTML = buildExportHTML();
+  document.body.appendChild(holder);
+
+  try {
+    await waitForImages(holder);
+    // let the browser finish layout/paint before capturing
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+
+    const canvas = await html2canvas(holder, {
+      scale: 2,
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: '#ffffff',
+      logging: false
+    });
+
+    if (!canvas.width || !canvas.height) {
+      throw new Error('Kandungan kosong semasa tangkapan');
+    }
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF('p', 'pt', 'a4');
+    const margin = 20;
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const usableWidth = pageWidth - margin * 2;
+    const usableHeight = pageHeight - margin * 2;
+    const imgWidth = usableWidth;
+    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    const imgData = canvas.toDataURL('image/jpeg', 0.95);
+
+    let heightLeft = imgHeight;
+    let position = margin;
+
+    pdf.addImage(imgData, 'JPEG', margin, position, imgWidth, imgHeight);
+    heightLeft -= usableHeight;
+
+    while (heightLeft > 0) {
+      position = margin - (imgHeight - heightLeft);
+      pdf.addPage();
+      pdf.addImage(imgData, 'JPEG', margin, position, imgWidth, imgHeight);
+      heightLeft -= usableHeight;
+    }
+
+    pdf.save(buildFilename('pdf'));
+    showToast('✓ PDF dimuat turun');
+  } catch (err) {
+    console.error('PDF export error:', err);
+    showToast('Gagal jana PDF. Cuba lagi sekali.', true);
+  } finally {
+    document.body.removeChild(holder);
+  }
+}
+
+// ─── Download as Word (.doc, opens natively in Microsoft Word) ───
+function muatTurunWord() {
+  const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+    <head><meta charset="utf-8"><title>RPH</title></head>
+    <body>${buildExportHTML()}<script>
+// ── KEEP-ALIVE — pastikan Supabase tidak tidur ──────────────
+(function(){
+  var _kaUrl = typeof SUPA_URL !== 'undefined' ? SUPA_URL : (typeof SB_URL !== 'undefined' ? SB_URL : '');
+  var _kaKey = typeof SUPA_KEY !== 'undefined' ? SUPA_KEY : (typeof SB_KEY !== 'undefined' ? SB_KEY : '');
+  if (!_kaUrl || !_kaKey) return;
+  if (window._ekKaTimer) clearInterval(window._ekKaTimer);
+  window._ekKaTimer = setInterval(function(){
+    fetch(_kaUrl+'/rest/v1/', {headers:{'apikey':_kaKey,'Authorization':'Bearer '+_kaKey}}).catch(function(){});
+  }, 4*60*1000);
+  console.log('EduKit keep-alive started');
+})();
+</script>
+</body></html>`;
+  const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = buildFilename('doc');
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('✓ Dokumen Word dimuat turun');
+}
+
+// ─── Initialize (dipanggil selepas log masuk berjaya) ───
+async function ckOnLoginHook(){
+  var cloud = await ckCloudPull();
+  if(cloud){ localStorage.setItem(RPH_STORAGE_KEY, JSON.stringify(cloud)); }
+  const loaded = muatDataTersimpan();
+  if (!loaded) {
+    generateTopik();
+    addActivity('Set Induksi', '5', '');
+    addActivity('Perkembangan', '20', '');
+    addActivity('Aktiviti', '20', '');
+    addActivity('Penutup', '5', '');
+  } else {
+    showToast('Draf tersimpan sebelum ini telah dimuatkan');
+  }
+  lucide.createIcons();
+}
+
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e0618b42254e628',t:'MTc3NDE5MTk0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
