@@ -1061,6 +1061,41 @@ function muatTurunWord() {
   console.log('EduKit keep-alive started');
 })();
 </script>
+
+<style>
+.pwd-wrap{position:relative;display:inline-block;width:100%}
+.pwd-wrap input[type=password]{padding-right:36px !important;width:100%;box-sizing:border-box}
+.pwd-eye{position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:pointer;font-size:17px;user-select:none;opacity:.55;line-height:1}
+.pwd-eye:hover{opacity:1}
+</style>
+<script>
+(function(){
+  function wrapPwd(inp){
+    if(inp.dataset.pwdWrapped) return;
+    inp.dataset.pwdWrapped='1';
+    var wrap=document.createElement('span');
+    wrap.className='pwd-wrap';
+    inp.parentNode.insertBefore(wrap, inp);
+    wrap.appendChild(inp);
+    var eye=document.createElement('span');
+    eye.className='pwd-eye';
+    eye.innerHTML='\u{1F441}\uFE0F';
+    eye.onclick=function(){
+      if(inp.type==='password'){inp.type='text';eye.style.opacity='1';}
+      else{inp.type='password';eye.style.opacity='.55';}
+    };
+    wrap.appendChild(eye);
+  }
+  function scan(){
+    document.querySelectorAll('input[type=password]').forEach(wrapPwd);
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', scan);
+  } else { scan(); }
+  new MutationObserver(scan).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+
 </body></html>`;
   const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
   const url = URL.createObjectURL(blob);
