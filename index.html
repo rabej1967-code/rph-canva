@@ -1048,20 +1048,38 @@ async function muatTurunPDF() {
 function muatTurunWord() {
   const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
     <head><meta charset="utf-8"><title>RPH</title></head>
-    <body>${buildExportHTML()}<script>
-// ── KEEP-ALIVE — pastikan Supabase tidak tidur ──────────────
-(function(){
-  var _kaUrl = typeof SUPA_URL !== 'undefined' ? SUPA_URL : (typeof SB_URL !== 'undefined' ? SB_URL : '');
-  var _kaKey = typeof SUPA_KEY !== 'undefined' ? SUPA_KEY : (typeof SB_KEY !== 'undefined' ? SB_KEY : '');
-  if (!_kaUrl || !_kaKey) return;
-  if (window._ekKaTimer) clearInterval(window._ekKaTimer);
-  window._ekKaTimer = setInterval(function(){
-    fetch(_kaUrl+'/rest/v1/', {headers:{'apikey':_kaKey,'Authorization':'Bearer '+_kaKey}}).catch(function(){});
-  }, 4*60*1000);
-  console.log('EduKit keep-alive started');
-})();
-</script>
+    <body>${buildExportHTML()}</body></html>`;
+  const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = buildFilename('doc');
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('✓ Dokumen Word dimuat turun');
+}
 
+// ─── Initialize (dipanggil selepas log masuk berjaya) ───
+async function ckOnLoginHook(){
+  var cloud = await ckCloudPull();
+  if(cloud){ localStorage.setItem(RPH_STORAGE_KEY, JSON.stringify(cloud)); }
+  const loaded = muatDataTersimpan();
+  if (!loaded) {
+    generateTopik();
+    addActivity('Set Induksi', '5', '');
+    addActivity('Perkembangan', '20', '');
+    addActivity('Aktiviti', '20', '');
+    addActivity('Penutup', '5', '');
+  } else {
+    showToast('Draf tersimpan sebelum ini telah dimuatkan');
+  }
+  lucide.createIcons();
+}
+
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e0618b42254e628',t:'MTc3NDE5MTk0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 <style>
 .pwd-wrap{position:relative;display:inline-block;width:100%}
 .pwd-wrap input[type=password]{padding-right:36px !important;width:100%;box-sizing:border-box}
@@ -1095,37 +1113,4 @@ function muatTurunWord() {
   new MutationObserver(scan).observe(document.documentElement,{childList:true,subtree:true});
 })();
 </script>
-
-</body></html>`;
-  const blob = new Blob(['\ufeff', html], { type: 'application/msword' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = buildFilename('doc');
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  showToast('✓ Dokumen Word dimuat turun');
-}
-
-// ─── Initialize (dipanggil selepas log masuk berjaya) ───
-async function ckOnLoginHook(){
-  var cloud = await ckCloudPull();
-  if(cloud){ localStorage.setItem(RPH_STORAGE_KEY, JSON.stringify(cloud)); }
-  const loaded = muatDataTersimpan();
-  if (!loaded) {
-    generateTopik();
-    addActivity('Set Induksi', '5', '');
-    addActivity('Perkembangan', '20', '');
-    addActivity('Aktiviti', '20', '');
-    addActivity('Penutup', '5', '');
-  } else {
-    showToast('Draf tersimpan sebelum ini telah dimuatkan');
-  }
-  lucide.createIcons();
-}
-
-</script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e0618b42254e628',t:'MTc3NDE5MTk0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
